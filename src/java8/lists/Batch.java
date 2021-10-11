@@ -22,6 +22,6 @@ public class Batch {
     public static void main(String[] args) {
         List<Integer> integerList = IntStream.range(1, 11).boxed().collect(toList());
         Collection<List<Integer>> batches = nBatches(integerList, 3);
-        System.out.println(batches);
+        System.out.println(batches); // [[1, 4, 7, 10], [2, 5, 8], [3, 6, 9]]
     }
 }
